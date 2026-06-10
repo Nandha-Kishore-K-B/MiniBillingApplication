@@ -1,4 +1,6 @@
 package com.example.minibillingapplication.event;
 
-public class InvoiceCreatedEvent {
+
+// A modern Java Record is perfect for immutable event data
+public record InvoiceCreatedEvent(Long invoiceId, String tenantId) {
 }
